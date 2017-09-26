@@ -12,25 +12,33 @@
 */
 
 // Welcome Page  
-Route::get('/', function () {
-    return view('welcome');
-})->middleware('guest')->name('home');
+Route::get('/', function () { return view('welcome'); })->middleware('guest')->name('home');
 
 
-//Dashboard
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware('auth')->name('dashboard');
-    
-
-// Authentication Routes
+// Custom Authentication Routes
 Route::get('/login', 'AuthController@index')->name('login');
 Route::post('/login', 'AuthController@create');
 Route::get('/logout', 'AuthController@destroy');
 
-Route::resource('/users', 'UsersController');
-Route::resource('/user/details', 'UserDetailsController');
-Route::resource('/profile', 'ProfileController');
+
+// Secured Routes
+Route::group(['middleware' => ['auth']], function () {
+
+    // Views
+    Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');
+    Route::get('/profile', function () { return view('profile'); })->name('profile');
+    Route::get('/employees', function () { return view('employees.index'); })->name('employees');
+    Route::get('/employee/create', function () { return view('employees.create'); })->name('createEmployee');
+
+
+    // Restful Resources
+    Route::resource('/user/details', 'UserDetailsController'); 
+    Route::resource('/users', 'UsersController');
+    
+});
+
+
+
 
 
 

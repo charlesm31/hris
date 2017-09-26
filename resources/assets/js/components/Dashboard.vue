@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h1>Welcome on Dashboard</h1>
-        <p>you are now login</p>
+        <p>you are now login, I am a simple <strong>vue component</strong></p>
     </div>
 </template>
 
@@ -13,9 +13,8 @@ export default {
         }        
     },
 
-    mounted(){
+    created(){
         console.log('Dasboard mounted.')                    
-        axios.get('/test').then(response => this.names = response.data);
     },   
     
 }

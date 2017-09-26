@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Auth;
+use App\User;
+use App\Profile;
+use DB;
 
 class UsersController extends Controller
 {
@@ -12,16 +15,16 @@ class UsersController extends Controller
     public function __construct(){
         $this->middleware('auth');
 
-        $this->middleware(function ($request, $next){
+        // $this->middleware(function ($request, $next){
 
-            $this->user_type = Auth::user()->type;
+        //     $this->user_type = Auth::user()->type;
 
-            if($this->user_type != 'admin'){
-                return redirect()->home();
-            }
+        //     if($this->user_type != 'admin'){
+        //         return redirect()->home();
+        //     }
 
-            return $next($request);
-        });
+        //     return $next($request);
+        // });
     }
 
     /**
@@ -31,7 +34,17 @@ class UsersController extends Controller
      */
     public function index(Request $request)
     {
-        return view ('users');
+        $users = DB::table('users')
+                    ->join('profiles', 'profiles.user_id', '=', 'users.id')
+                    ->join('stores', 'stores.id', '=', 'profiles.store_id')
+                    ->get(array(
+                        'username', 'email', 'type', 'firstname', 'lastname', 'gender', 'mobile',
+                        'role', 'stores.name as store', 'pnumber', 'salary', 'start_date','hiring_manager'
+                    )); 
+
+        return response()->json([
+            'users'     =>  $users
+        ]);
     }
 
     /**

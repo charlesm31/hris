@@ -18,6 +18,8 @@ window.Vue = require('vue');
 Vue.component('Homepage', require('./components/Homepage.vue'));
 Vue.component('Profile', require('./components/Profile.vue'));
 Vue.component('Dashboard', require('./components/Dashboard.vue'));
+Vue.component('Employees', require('./components/Employees.vue'));
+Vue.component('Employeeform', require('./components/Employeeform.vue'));
 
 const app = new Vue({
     el: '#app'

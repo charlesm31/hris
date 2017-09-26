@@ -1,5 +1,5 @@
 @if(session()->has('message'))
-    <div class="alert alert-danger"  style="position: relative; top: 50px;">
+    <div class="alert alert-danger validation-alert"  style="position: relative;">
         {{ session()->get('message') }}
     </div>
 @endif

@@ -8350,18 +8350,24 @@ button.close {
   }
 }
 
-.list-group-item {
-  min-height: 44px;
+.navbar {
+  margin-bottom: 0px;
 }
 
-.profile-docs {
-  padding-top: 20px;
-  text-align: center;
+#page-content {
+  margin-top: 50px;
 }
 
-.profile-docs .profile-docs-img {
-  max-width: 150px;
-  display: block;
-  margin: 0 auto;
+.validation-alert {
+  background-color: #d21937;
+  border-color: #d21937;
+  color: #fff;
+  border-radius: 0;
+  margin-bottom: 0px;
+  font-size: 16px;
+}
+
+.validation-alert li {
+  font-size: 16px;
 }
 

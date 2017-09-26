@@ -8,18 +8,5 @@
 // Bootstrap
 @import "~bootstrap-sass/assets/stylesheets/bootstrap";
 
-
-.list-group-item{
-    min-height: 44px;
-}
-
-.profile-docs{
-    padding-top: 20px;
-    text-align: center;
-
-    .profile-docs-img{
-        max-width: 150px;
-        display: block;
-        margin: 0 auto;
-    }
-}
+// Navbar
+@import "navbar";

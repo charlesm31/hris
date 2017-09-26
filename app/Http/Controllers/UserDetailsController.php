@@ -32,6 +32,14 @@ class UserDetailsController extends Controller
         $bank       = $user->bankDetails;
         $documents  = $user->documents;
 
+        // return response()->json([
+        //     'user_details'  => $user_details,
+        //     'store'         => $store,
+        //     'contact'       => $contact,
+        //     'bank'          => $bank,
+        //     'documents'     => $documents
+        // ]);
+
         return compact('user_details', 'store', 'contact', 'bank', 'documents');
     }
 
