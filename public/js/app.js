@@ -42774,6 +42774,15 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     data: function data() {
@@ -42810,6 +42819,8 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "container" }, [
+    _vm._m(0),
+    _vm._v(" "),
     _c("div", { staticClass: "row" }, [
       _c("div", { staticClass: "col-sm-10" }, [
         _vm.details
@@ -42969,20 +42980,20 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("ul", { staticClass: "list-group" }, [
-          _vm._m(0),
+          _vm._m(1),
           _vm._v(" "),
           _c("li", { staticClass: "list-group-item text-right" }, [
-            _vm._m(1),
+            _vm._m(2),
             _vm._v(" " + _vm._s(_vm.contact.name))
           ]),
           _vm._v(" "),
           _c("li", { staticClass: "list-group-item text-right" }, [
-            _vm._m(2),
+            _vm._m(3),
             _vm._v(" " + _vm._s(_vm.contact.relation))
           ]),
           _vm._v(" "),
           _c("li", { staticClass: "list-group-item text-right" }, [
-            _vm._m(3),
+            _vm._m(4),
             _vm._v(" " + _vm._s(_vm.contact.mobile))
           ])
         ])
@@ -43032,25 +43043,25 @@ var render = function() {
         ]),
         _vm._v(" "),
         _c("ul", { staticClass: "list-group" }, [
-          _vm._m(4),
+          _vm._m(5),
           _vm._v(" "),
           _c("li", { staticClass: "list-group-item text-right" }, [
-            _vm._m(5),
+            _vm._m(6),
             _vm._v(" " + _vm._s(_vm.bank.bank))
           ]),
           _vm._v(" "),
           _c("li", { staticClass: "list-group-item text-right" }, [
-            _vm._m(6),
+            _vm._m(7),
             _vm._v(" " + _vm._s(_vm.bank.account_name))
           ]),
           _vm._v(" "),
           _c("li", { staticClass: "list-group-item text-right" }, [
-            _vm._m(7),
+            _vm._m(8),
             _vm._v(" " + _vm._s(_vm.bank.bsb))
           ]),
           _vm._v(" "),
           _c("li", { staticClass: "list-group-item text-right" }, [
-            _vm._m(8),
+            _vm._m(9),
             _vm._v(" " + _vm._s(_vm.bank.account_number))
           ])
         ]),
@@ -43220,6 +43231,30 @@ var render = function() {
   ])
 }
 var staticRenderFns = [
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "jumbotron" }, [
+      _c("div", { staticClass: "container" }, [
+        _c("h1", [_vm._v("Profile Page")]),
+        _vm._v(" "),
+        _c("p", [
+          _vm._v("Data pulled from database and displayed via "),
+          _c("strong", [_vm._v("Vue.js and axion")])
+        ]),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "btn btn-success",
+            attrs: { href: "/employee/create" }
+          },
+          [_vm._v("Create New")]
+        )
+      ])
+    ])
+  },
   function() {
     var _vm = this
     var _h = _vm.$createElement

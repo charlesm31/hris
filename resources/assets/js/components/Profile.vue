@@ -1,5 +1,14 @@
 <template>
 <div class="container">
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1>Profile Page</h1>
+            <p>Data pulled from database and displayed via <strong>Vue.js and axion</strong></p>
+            <a href="/employee/create" class="btn btn-success">Create New</a>
+        </div>
+    </div>
+
     <!-- Upper Profile -->
     <div class="row">
         <div class="col-sm-10">
