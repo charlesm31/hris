@@ -25,17 +25,17 @@ class CreateProfilesTable extends Migration
             $table->string('pnumber')->unique();
             $table->string('salary');          
             $table->string('hiring_manager');
-            $table->string('tax_file_num');
             $table->date('start_date');
-            $table->date('birthday');
-            $table->string('street');
-            $table->string('city');
-            $table->string('state');
-            $table->string('postal');
-            $table->string('country');
-            $table->string('shirt_size');
-            $table->string('pants_size');
-            $table->string('skirt_size');
+            $table->string('tax_file_num')->nullable();            
+            $table->date('birthday')->nullable();
+            $table->string('street')->nullable();
+            $table->string('city')->nullable();
+            $table->string('state')->nullable();
+            $table->string('postal')->nullable();
+            $table->string('country')->nullable();
+            $table->string('shirt_size')->nullable();
+            $table->string('pants_size')->nullable();
+            $table->string('skirt_size')->nullable();
             $table->timestamps();
         });
     }

@@ -12,7 +12,9 @@ class Profile extends Model
      *
      * @var array
      */
+    protected $guarded = [''];
     protected $hidden = ['id', 'user_id', 'store_id'];
+    protected $dates = ['date'];
 
     
     /**

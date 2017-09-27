@@ -26,21 +26,13 @@ class UserDetailsController extends Controller
     {
         $user = Auth::user();
         
-        $user_details    = $user->profile;
+        $profile    = $user->profile;
         $store      = Store::find($user->id);
         $contact    = $user->emergencyContact;
         $bank       = $user->bankDetails;
-        $documents  = $user->documents;
+        $documents  = $user->documents;        
 
-        // return response()->json([
-        //     'user_details'  => $user_details,
-        //     'store'         => $store,
-        //     'contact'       => $contact,
-        //     'bank'          => $bank,
-        //     'documents'     => $documents
-        // ]);
-
-        return compact('user_details', 'store', 'contact', 'bank', 'documents');
+        return compact('profile', 'store', 'contact', 'bank', 'documents');
     }
 
     /**

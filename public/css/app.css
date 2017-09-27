@@ -8350,6 +8350,16 @@ button.close {
   }
 }
 
+h1 {
+  margin: 0px;
+}
+
+h2 {
+  font-size: 30px;
+  color: #1fa971;
+  text-align: left;
+}
+
 .navbar {
   margin-bottom: 0px;
 }

@@ -27,11 +27,9 @@ Route::group(['middleware' => ['auth']], function () {
     // Views
     Route::get('/dashboard', function () { return view('dashboard'); })->name('dashboard');
     Route::get('/profile', function () { return view('profile'); })->name('profile');
-    Route::get('/employees', function () { return view('employees.index'); })->name('employees');
-    Route::get('/employee/create', function () { return view('employees.create'); })->name('createEmployee');
+    Route::get('/employees', function () { return view('users.index'); })->name('employees');
 
-
-    // Restful Resources
+    // Restful Endpoints
     Route::resource('/user/details', 'UserDetailsController'); 
     Route::resource('/users', 'UsersController');
     
