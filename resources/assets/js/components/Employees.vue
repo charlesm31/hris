@@ -41,8 +41,8 @@
                 <div v-bind:class="{ 'form-group': true, 'has-error': errors.type }">
                     <label>Account Type</label>
                     <select class="form-control" v-model="user.type">
-                        <option :value="Admin">Admin</option>
-                        <option :value="User">User</option>
+                        <option value="Admin">Admin</option>
+                        <option value="User">User</option>
                     </select>
                     <span class="help-block" v-for="error in errors.type">{{ error }}</span>
                 </div>
@@ -70,8 +70,8 @@
                 <div v-bind:class="{ 'form-group': true, 'has-error': errors.gender }">
                     <label>Gender</label>
                     <select class="form-control" v-model="user.gender">
-                        <option :value="Male" >Male</option>
-                        <option :value="Female">Female</option>
+                        <option value="Male" >Male</option>
+                        <option value="Female">Female</option>
                     </select>
                     <span class="help-block" v-for="error in errors.gender">{{ error }}</span>
                 </div>
@@ -92,8 +92,8 @@
                 <div v-bind:class="{ 'form-group': true, 'has-error': errors.role }">
                     <label>Role</label>
                     <select class="form-control" v-model="user.role">
-                        <option :value="Fulltime" >Fulltime</option>
-                        <option :value="Casual">Casual</option>
+                        <option value="Fulltime" >Fulltime</option>
+                        <option value="Casual">Casual</option>
                     </select>
                     <span class="help-block" v-for="error in errors.role">{{ error }}</span>
                 </div>
@@ -102,9 +102,9 @@
                 <div v-bind:class="{ 'form-group': true, 'has-error': errors.store }">
                     <label>Store Assignment</label>
                     <select class="form-control" v-model="user.store">
-                        <option :value="1" >Carindale GF</option>
-                        <option :value="2">Carindale 1</option>
-                        <option :value="3">Redbank</option>
+                        <option value="1" >Carindale GF</option>
+                        <option value="2">Carindale 1</option>
+                        <option value="3">Redbank</option>
                     </select>
                     <span class="help-block" v-for="error in errors.store">{{ error }}</span>
                 </div>

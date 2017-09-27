@@ -44411,13 +44411,11 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { domProps: { value: _vm.Admin } }, [
+                    _c("option", { attrs: { value: "Admin" } }, [
                       _vm._v("Admin")
                     ]),
                     _vm._v(" "),
-                    _c("option", { domProps: { value: _vm.User } }, [
-                      _vm._v("User")
-                    ])
+                    _c("option", { attrs: { value: "User" } }, [_vm._v("User")])
                   ]
                 ),
                 _vm._v(" "),
@@ -44555,11 +44553,11 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { domProps: { value: _vm.Male } }, [
+                    _c("option", { attrs: { value: "Male" } }, [
                       _vm._v("Male")
                     ]),
                     _vm._v(" "),
-                    _c("option", { domProps: { value: _vm.Female } }, [
+                    _c("option", { attrs: { value: "Female" } }, [
                       _vm._v("Female")
                     ])
                   ]
@@ -44655,11 +44653,11 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { domProps: { value: _vm.Fulltime } }, [
+                    _c("option", { attrs: { value: "Fulltime" } }, [
                       _vm._v("Fulltime")
                     ]),
                     _vm._v(" "),
-                    _c("option", { domProps: { value: _vm.Casual } }, [
+                    _c("option", { attrs: { value: "Casual" } }, [
                       _vm._v("Casual")
                     ])
                   ]
@@ -44711,17 +44709,15 @@ var render = function() {
                     }
                   },
                   [
-                    _c("option", { domProps: { value: 1 } }, [
+                    _c("option", { attrs: { value: "1" } }, [
                       _vm._v("Carindale GF")
                     ]),
                     _vm._v(" "),
-                    _c("option", { domProps: { value: 2 } }, [
+                    _c("option", { attrs: { value: "2" } }, [
                       _vm._v("Carindale 1")
                     ]),
                     _vm._v(" "),
-                    _c("option", { domProps: { value: 3 } }, [
-                      _vm._v("Redbank")
-                    ])
+                    _c("option", { attrs: { value: "3" } }, [_vm._v("Redbank")])
                   ]
                 ),
                 _vm._v(" "),
