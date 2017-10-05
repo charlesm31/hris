@@ -8,12 +8,11 @@ use App\User;
 use App\Store;
 use App\EmergencyContact;
 
-class UserDetailsController extends Controller
+class ProfileController extends Controller
 {
 
     public function __construct()
     {
-
         $this->middleware('auth');        
     }
     

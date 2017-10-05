@@ -16,10 +16,12 @@ window.Vue = require('vue');
  */
 
 Vue.component('Homepage', require('./components/Homepage.vue'));
-Vue.component('Profile', require('./components/Profile.vue'));
+Vue.component('Navbar', require('./components/Navbar.vue'));
+// Vue.component('Navlinks', require('./components/Navlinks.vue'));
+// Vue.component('Errors', require('./components/Errors.vue'));
 Vue.component('Dashboard', require('./components/Dashboard.vue'));
 Vue.component('Employees', require('./components/Employees.vue'));
-Vue.component('Employeeform', require('./components/Employeeform.vue'));
+Vue.component('Profile', require('./components/Profile.vue'));
 
 const app = new Vue({
     el: '#app'

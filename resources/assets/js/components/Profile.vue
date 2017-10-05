@@ -156,7 +156,7 @@ export default {
     mounted(){
         console.log('Profile mounted.');
         
-        axios.get('/user/details').then( (response) => {
+        axios.get('/user/profile').then( (response) => {
             this.profile = response.data.profile;
             this.store = response.data.store;
             this.contact = response.data.contact;

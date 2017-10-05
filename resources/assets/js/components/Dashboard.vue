@@ -45,7 +45,7 @@ export default {
     created(){
         console.log('Dasboard mounted.')   
         
-        axios.get('/user/details').then( (response) => {
+        axios.get('/user/profile').then( (response) => {
             this.user = response.data.profile.firstname;           
             console.log(this.user);
         });
