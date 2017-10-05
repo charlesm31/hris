@@ -2,34 +2,33 @@
 <div>
     <div class="jumbotron">
       <div class="container">
-        <h1>Hello, world!</h1>
-        <p>This is a <strong>Vue component</strong> for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
+        <h1>Simple <strong>Vue component</strong> </h1>
+        <p>for displaying the welcome page made with the following:</p>
       </div>
     </div>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          <h2>Vue JS 2</h2>
+          <p>Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable.</p>
+          <p><a class="btn btn-default" href="https://vuejs.org/" target="_blank">View details »</a></p>
         </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          <h2>Laravel 5.5</h2>
+          <p>is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern.</p>
+          <p><a class="btn btn-default" href="https://laravel.com" target="_blank">View details »</a></p>
        </div>
         <div class="col-md-4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          <h2>PHP 7</h2>
+          <p>PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. PHP STANDS FOR: PHP: Hypertext Preprocessor.</p>
+          <p><a class="btn btn-default" href="http://php.net/manual/en/intro-whatis.php" target="_blank">View details »</a></p>
         </div>
       </div>
 
       <hr>
 
       <footer>
-        <p>© 2016 Company, Inc.</p>
+        <p>© 2016 Charlesm31, Inc.</p>
       </footer>
     </div>
 </div>

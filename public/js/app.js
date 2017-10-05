@@ -42379,7 +42379,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     mounted: function mounted() {
@@ -42405,25 +42404,13 @@ var staticRenderFns = [
     return _c("div", [
       _c("div", { staticClass: "jumbotron" }, [
         _c("div", { staticClass: "container" }, [
-          _c("h1", [_vm._v("Hello, world!")]),
-          _vm._v(" "),
-          _c("p", [
-            _vm._v("This is a "),
-            _c("strong", [_vm._v("Vue component")]),
-            _vm._v(
-              " for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique."
-            )
+          _c("h1", [
+            _vm._v("Simple "),
+            _c("strong", [_vm._v("Vue component")])
           ]),
           _vm._v(" "),
           _c("p", [
-            _c(
-              "a",
-              {
-                staticClass: "btn btn-primary btn-lg",
-                attrs: { href: "#", role: "button" }
-              },
-              [_vm._v("Learn more »")]
-            )
+            _vm._v("for displaying the welcome page made with the following:")
           ])
         ])
       ]),
@@ -42431,11 +42418,11 @@ var staticRenderFns = [
       _c("div", { staticClass: "container" }, [
         _c("div", { staticClass: "row" }, [
           _c("div", { staticClass: "col-md-4" }, [
-            _c("h2", [_vm._v("Heading")]),
+            _c("h2", [_vm._v("Vue JS 2")]),
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. "
+                "Vue (pronounced /vjuː/, like view) is a progressive framework for building user interfaces. Unlike other monolithic frameworks, Vue is designed from the ground up to be incrementally adoptable."
               )
             ]),
             _vm._v(" "),
@@ -42444,7 +42431,7 @@ var staticRenderFns = [
                 "a",
                 {
                   staticClass: "btn btn-default",
-                  attrs: { href: "#", role: "button" }
+                  attrs: { href: "https://vuejs.org/", target: "_blank" }
                 },
                 [_vm._v("View details »")]
               )
@@ -42452,11 +42439,11 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-4" }, [
-            _c("h2", [_vm._v("Heading")]),
+            _c("h2", [_vm._v("Laravel 5.5")]),
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. "
+                "is a free, open-source PHP web framework, created by Taylor Otwell and intended for the development of web applications following the model–view–controller (MVC) architectural pattern."
               )
             ]),
             _vm._v(" "),
@@ -42465,7 +42452,7 @@ var staticRenderFns = [
                 "a",
                 {
                   staticClass: "btn btn-default",
-                  attrs: { href: "#", role: "button" }
+                  attrs: { href: "https://laravel.com", target: "_blank" }
                 },
                 [_vm._v("View details »")]
               )
@@ -42473,11 +42460,11 @@ var staticRenderFns = [
           ]),
           _vm._v(" "),
           _c("div", { staticClass: "col-md-4" }, [
-            _c("h2", [_vm._v("Heading")]),
+            _c("h2", [_vm._v("PHP 7")]),
             _vm._v(" "),
             _c("p", [
               _vm._v(
-                "Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus."
+                "PHP is a server-side scripting language designed primarily for web development but also used as a general-purpose programming language. PHP STANDS FOR: PHP: Hypertext Preprocessor."
               )
             ]),
             _vm._v(" "),
@@ -42486,7 +42473,10 @@ var staticRenderFns = [
                 "a",
                 {
                   staticClass: "btn btn-default",
-                  attrs: { href: "#", role: "button" }
+                  attrs: {
+                    href: "http://php.net/manual/en/intro-whatis.php",
+                    target: "_blank"
+                  }
                 },
                 [_vm._v("View details »")]
               )
@@ -42496,7 +42486,7 @@ var staticRenderFns = [
         _vm._v(" "),
         _c("hr"),
         _vm._v(" "),
-        _c("footer", [_c("p", [_vm._v("© 2016 Company, Inc.")])])
+        _c("footer", [_c("p", [_vm._v("© 2016 Charlesm31, Inc.")])])
       ])
     ])
   }
