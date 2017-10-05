@@ -7,6 +7,7 @@ Route::get('dashboard', 'ViewsController@dashboard')->name('dashboard');
 Route::get('employees', 'ViewsController@employees')->name('employees');
 Route::get('profile', 'ViewsController@profile')->name('profile');
 
+
 // Custom Authentication
 Route::match(['get','post'], '/login', 'SessionsController@login')->name('login');
 Route::get('logout', 'SessionsController@logout');

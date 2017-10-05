@@ -20,23 +20,17 @@ class SessionsController extends Controller
         $this->validate(request(), [
             'user'  => 'required',
             'password'  => 'required'
-        ]);
-
-       
-        
+        ]);              
 
         // attempt login
         if (Auth::attempt(array('username' => $request->user, 'password' => $request->password))) {
-            return ['message' => 'success'];
+            return redirect('/dashboard');
         }
-
         elseif (Auth::attempt(array('email' => $request->user, 'password' => $request->password))) {
-            return ['message' => 'success'];
+            return redirect('/dashboard');
         }
-
         else { 
-            return ['message' => 'Invalid credentials'];
-            
+            return redirect()->back()->with('message', 'Invalid credentials');
         }
     }
 

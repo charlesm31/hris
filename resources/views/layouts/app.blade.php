@@ -14,9 +14,11 @@
 </head>
 <body>
     <div id="app">
-        <navbar></navbar>       
+        @include('layouts.navbar')
 
-        <div id="page-content">              
+        <div id="page-content">
+            @include('validation.errors')
+            @include('validation.session')      
             @yield('content')
         </div>
     </div>
